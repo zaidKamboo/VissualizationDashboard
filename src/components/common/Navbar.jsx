@@ -6,16 +6,14 @@ import { toggleDarkMode } from '../../store/slices/darkmodeSlice';
 const Navbar = () => {
     const darkmode = useSelector(makeSelectDarkmode);
     const dispatch = useDispatch();
-    console.log(darkmode)
-    const handletoggle = () => {
-        console.log("INSIDE");
-        dispatch(toggleDarkMode())
-    }
+
+    const handletoggle = () => dispatch(toggleDarkMode());
+
     return (
         <nav className="bg-slate-900 dark:bg-gray-950 text-white">
             <div className="container mx-auto flex justify-between items-center p-4">
                 {/* Logo */}
-                <div className="text-xl font-bold">MyApp</div>
+                <div className="text-2xl tracking-tighter font-bold">Visualization Dashboard</div>
 
                 {/* Nav Links */}
                 <div className="hidden md:flex space-x-6">

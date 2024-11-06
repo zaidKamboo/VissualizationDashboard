@@ -7,8 +7,11 @@ const darkmodeSlice = createSlice({
     name: "dark-mode",
     reducers: {
         toggleDarkMode: (state) => !state,
+        setDarkmode: () => true,
+        resetDarkmode: () => false,
     },
 });
 
-export const { toggleDarkMode } = darkmodeSlice.actions;
+export const { toggleDarkMode, setDarkmode, resetDarkmode } =
+    darkmodeSlice.actions;
 export default darkmodeSlice.reducer;

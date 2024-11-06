@@ -3,6 +3,7 @@ import Dashboard from './pages/Dashboard'
 import Navbar from './components/common/Navbar'
 import { useSelector } from 'react-redux'
 import { makeSelectDarkmode } from './store/selectors'
+import Footer from './components/common/Footer'
 
 const App = () => {
   const darkmode = useSelector(makeSelectDarkmode);
@@ -18,6 +19,7 @@ const App = () => {
     <>
       <Navbar />
       <Dashboard />
+      <Footer />
     </>
   )
 }

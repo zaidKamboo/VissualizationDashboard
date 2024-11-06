@@ -5,6 +5,7 @@ import { getAnalytics, resetAnalyitcs } from '../store/slices/analyticsSlice';
 import LikelihoodChart from '../components/dashboard/LikelihoodChart';
 import RelevanceChart from '../components/dashboard/RelevanceChart';
 import CountryTopicsChart from '../components/dashboard/CountryTopicsChart';
+import AnalyticsTable from '../components/dashboard/AnalyticsTable';
 
 const Dashboard = () => {
     const dispatch = useDispatch();
@@ -19,6 +20,10 @@ const Dashboard = () => {
                 <LikelihoodChart />
                 <RelevanceChart />
                 <CountryTopicsChart />
+            </div>
+            <div className="container mx-auto p-6">
+
+                <AnalyticsTable />
             </div>
         </div>
     )
